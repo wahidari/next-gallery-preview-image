@@ -99,6 +99,29 @@ export default function Home({ photos, albums }) {
                                         <Link href={`/album/${album.slug}`}>
                                             <a className="card-title text-decoration-none text-dark stretched-link"><h5>{album.title}</h5></a>
                                         </Link>
+                                        <p className="card-text">This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                <div className="container py-5">
+                    <h2 className="mb-3">Albums</h2>
+                    <div className="row g-3">
+                        {albums.map(album =>
+                            <div className="col-md-6 col-lg-4" key={album.slug}>
+                                <div className="card card-gallery text-white">
+                                    <Image src={album.src} alt="image" width={350} height={250} />
+                                    <Link href={`/album/${album.slug}`}>
+                                        <a className="stretched-link"></a>
+                                    </Link>
+                                    <div className="card-img-overlay">
+                                        <div className="bottom-0 position-absolute mb-3">
+                                            <h5>{album.title}</h5>
+                                            <p className="card-text">This content is a little bit longer.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

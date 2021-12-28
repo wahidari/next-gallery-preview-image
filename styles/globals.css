@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card-gallery img {
+  transition: transform 1s;
+}
+
+.card-gallery:hover img {
+  transform: scale(1.1);
+}
