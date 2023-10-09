@@ -69,6 +69,8 @@ export default function Home({ photos, albums }) {
 
                 <div className="container py-5">
                     <h2 className="mb-3">Gallery</h2>
+                    <a href="https://github.com/jossmac/react-images">react-images</a> & {" "}
+                    <a href="https://github.com/neptunian/react-photo-gallery">react-photo-gallery</a>
                     <Gallery photos={photos} onClick={openLightbox} />
                     <ModalGateway>
                         {viewerIsOpen ? (
@@ -94,7 +96,7 @@ export default function Home({ photos, albums }) {
                         {albums.map(album =>
                             <div className="col-md-6 col-lg-4" key={album.slug}>
                                 <div className="card">
-                                    <Image src={album.src} alt="image" width={350} height={250} />
+                                    <Image src={album.src} alt="image" width={350} height={250} unoptimized />
                                     <div className="card-body">
                                         <Link href={`/album/${album.slug}`}>
                                             <a className="card-title text-decoration-none text-dark stretched-link"><h5>{album.title}</h5></a>
@@ -113,7 +115,7 @@ export default function Home({ photos, albums }) {
                         {albums.map(album =>
                             <div className="col-md-6 col-lg-4" key={album.slug}>
                                 <div className="card card-gallery text-white">
-                                    <Image src={album.src} alt="image" width={350} height={250} />
+                                    <Image src={album.src} alt="image" width={350} height={250} unoptimized />
                                     <Link href={`/album/${album.slug}`}>
                                         <a className="stretched-link"></a>
                                     </Link>

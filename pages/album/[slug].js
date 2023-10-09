@@ -121,7 +121,7 @@ export default function AlbumDetail({ album }) {
                     <div className="row g-2">
                         {album.photos.map(photo =>
                             <div className="col-6" key={photo}>
-                                <Image src={photo} alt="Image" width={550} height={350} />
+                                <Image src={photo} alt="Image" width={550} height={350} unoptimized />
                             </div>
                         )}
                     </div>
