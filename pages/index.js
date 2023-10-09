@@ -52,11 +52,6 @@ export default function Home({ photos, albums }) {
 
     return (
         <>
-            <style jsx>
-                {`
-            `}
-            </style>
-
             <Head>
                 <title>Next Gallery</title>
                 <meta name="description" content="Next Bootstrap" />

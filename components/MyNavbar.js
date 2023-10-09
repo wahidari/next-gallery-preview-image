@@ -3,11 +3,6 @@ import Link from "next/link"
 export default function MyNavbar() {
     return (
         <>
-            <style jsx>
-                {`
-                
-            `}
-            </style>
             <div className="bg-navbar shadow-sm">
                 <nav className="navbar navbar-expand-lg container">
                     <div className="container-fluid">
