@@ -66,11 +66,12 @@ export default function Home() {
                                     caption={item.title}
                                     width="1024"
                                     height="768"
+                                    className="rounded"
                                 >
                                     {({ ref, open }) => (
                                         <img style={{
                                             cursor: 'pointer'
-                                        }} className="col-12 col-sm-6 col-lg-4" ref={ref} onClick={open} src={item.thumbnail} alt={item.title} />
+                                        }} className="col-12 col-sm-6 col-lg-4 rounded" ref={ref} onClick={open} src={item.thumbnail} alt={item.title} />
                                     )}
                                 </Item>
                             )}

@@ -17,7 +17,8 @@
     "react-images": "^1.2.0-beta.7",
     "react-lightgallery": "^0.9.0",
     "react-photo-gallery": "^8.0.0",
-    "react-photoswipe-gallery": "^2.2.7"
+    "react-photoswipe-gallery": "^2.2.7",
+    "yet-another-react-lightbox": "^3.13.1"
   },
   "devDependencies": {
     "eslint": "8.5.0",

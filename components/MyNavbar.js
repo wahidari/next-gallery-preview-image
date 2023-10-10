@@ -27,6 +27,9 @@ export default function MyNavbar() {
                                 <Link href="/react-lightgallery">
                                     <a className="nav-link" aria-current="page">react lightgallery</a>
                                 </Link>
+                                <Link href="/yet-another-react-lightbox">
+                                    <a className="nav-link" aria-current="page">Yet Another React Lightbox</a>
+                                </Link>
                             </div>
                         </div>
                     </div>

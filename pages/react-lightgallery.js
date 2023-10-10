@@ -39,9 +39,9 @@ export default function Home() {
     ]
 
     const PhotoItem = ({ image, thumb, group, alt }) => (
-        <div style={{ maxWidth: "100%", width: "100%", padding: "5px", cursor: 'pointer' }}>
+        <div style={{width: "100%", cursor: 'pointer' }}>
             <LightgalleryItem group={group} src={image} thumb={thumb}>
-                <img src={image} style={{ width: "100%" }} alt={alt} />
+                <img src={image} style={{ width: "100%", height: "237px" }} className="rounded" alt={alt} />
             </LightgalleryItem>
         </div>
     );
